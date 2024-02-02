@@ -15,4 +15,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<iframe src="https://www.bento.com/wayofmani" title="Mani Jalilzadeh"></iframe>
+# Mani Jalilzadeh
+## Product Designer
+
