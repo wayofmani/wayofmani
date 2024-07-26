@@ -1,6 +1,6 @@
 # Mani Jalilzadeh
 ### Workin on my design portfolio RN. 
-![image]('./Stream Background.png')
+![image](Stream_Background.png)
 
 🚀 Releases:
 - Dota 2 Playtime Calculator
