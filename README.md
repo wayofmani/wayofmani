@@ -1,7 +1,7 @@
-#Mani Jalilzadeh
-# Product Designer, UI/UX Engineer 🥸
+# Mani Jalilzadeh
 ### Workin on my design portfolio RN. 
-#### I'm here to develop my ideas by my self
+![image]('./Stream Background.png')
+
 🚀 Releases:
 - Dota 2 Playtime Calculator
 
