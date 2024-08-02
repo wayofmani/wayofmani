@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,13 +13,18 @@
     <!-- Scripts and Styles -->
     <!-- Working on coding this project with react, so don't judge me! -->
     <style>
-
+        ::selection{
+            background-color: #ffffff07;
+            color:auto;
+        }
         *{
             font-family: "Bebas Neue", sans-serif;
             font-weight: 400;
             font-style: normal;
             box-sizing: border-box;
             transition: ease-in-out all .3s;
+            user-select: none;
+            -webkit-user-drag: none;
         }
         html,body{
             width: 100%;
@@ -58,39 +62,89 @@
                 box-shadow: 2px 2px 14px -3px #b7e242;
             }
         }
+    
+    .items{
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        width: 90%;
+        justify-content: center;
+    }
+    #changeTheme{
+        background-color: transparent;
+        color: white;
+        padding: 2em;
+        &:hover{
+            box-shadow: none;
+            transform: scale(1.15);
+        }
+    }
+    /* Mobile */
+        @media only screen and (max-width: 528px)
+        {
+            .items{
+                flex-direction: column;
+                a,button {
+                    width: 100%;
+                    display: flex;
+                    text-decoration: none;
+                    align-items: center;
+                    gap: 1rem;
+                    justify-content: space-between;
+                }
+            }
+        }
+        /* Desktop */
+        @media only screen and (min-width: 528px)
+        {
+            .items{
+                flex-direction: row;
+                
+                a,button {
+                    display: flex;
+                    text-decoration: none;
+                    align-items: center;
+                    gap: 0.4rem;
+                    justify-content: space-between;
+                }
+            }
+        }
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
 </head>
 <body>
     <h1>
         I'm still working on my <span>portfolio</span>... 
     </h1>
-    <div>
+    <div class="items">
         <a href="https://instagram.com/wayofmani">
             <button type="button">
-               Instagram
+            <span class="material-symbols-outlined">blur_on</span>
+                Instagram
             </button>
         </a>
 
         <a href="https://dribbble.com/wayofmani">
             <button type="button">
+                <span class="material-symbols-outlined">
+                    photo_library
+                </span>
                 Dribbble
             </button>
         </a>
+        
+        <a href="Mani Jalilzadeh Resume - 2024.pdf" download>
+            <button type="button">
+                <span class="material-symbols-outlined">download</span> 
+                Read CV / Resume
+            </button>
+        </a>
     </div>
+    <button id="changeTheme" type="button">
+        <span class="material-symbols-outlined">contrast</span>
+        Change Theme
+    </button>
+    <!-- <embed src="Mani Jalilzadeh Resume - 2024.pdf" width="95%" height="2000px" nocontrols/> -->
 </body>
 </html>
-=======
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
->>>>>>> bf675f1915fc41692d0b6231a80224ddb8daa72f
