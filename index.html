@@ -40,7 +40,7 @@
             flex-direction: column;
         }
         h1{
-            font-size: 12vw;
+            font-size: min(12vh , 6vh);
             line-height: 90%;
             text-transform: uppercase;
             width: 100%;
@@ -50,14 +50,15 @@
             }
         }
         button{
-            cursor: pointer;
+            cursor: default;
             border: none;
             border-radius: 1vh;
             font-size: 3.2vh;
             padding: 1vw 2vh;
             background-color: #f0ffc8;
             color: #1d2e09;
-            &:hover {
+            &:hover{
+                cursor: pointer;
                 background-color: #b7e242;
                 box-shadow: 2px 2px 14px -3px #b7e242;
             }
@@ -110,41 +111,37 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
 </head>
 <body>
     <h1>
         I'm still working on my <span>portfolio</span>... 
     </h1>
+
+    <img src="https://img.freepik.com/premium-vector/pixel-art-man-sleep-comfy_150088-1126.jpg" alt="work in progress gif animation, a person that has slept with Laptop in front of him." style="mix-blend-mode: multiply;transform: scale(0.5);">
+
     <div class="items">
+
         <a href="https://instagram.com/wayofmani">
             <button type="button">
-            <span class="material-symbols-outlined">blur_on</span>
                 Instagram
             </button>
         </a>
 
         <a href="https://dribbble.com/wayofmani">
             <button type="button">
-                <span class="material-symbols-outlined">
-                    photo_library
-                </span>
                 Dribbble
             </button>
         </a>
         
         <a href="Mani Jalilzadeh Resume - 2024.pdf" download>
             <button type="button">
-                <span class="material-symbols-outlined">download</span> 
                 Read CV / Resume
             </button>
         </a>
+
     </div>
-    <button id="changeTheme" type="button">
-        <span class="material-symbols-outlined">contrast</span>
-        Change Theme
-    </button>
-    <!-- <embed src="Mani Jalilzadeh Resume - 2024.pdf" width="95%" height="2000px" nocontrols/> -->
 </body>
 </html>
